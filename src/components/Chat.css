@@ -1,0 +1,80 @@
+.gradient-custom {
+    width: 100%;
+    height: 100%;
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+            to bottom right,
+            rgba(252, 203, 144, 1),
+            rgba(213, 126, 235, 1)
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(
+            to bottom right,
+            rgba(252, 203, 144, 1),
+            rgba(213, 126, 235, 1)
+    );
+}
+
+.mask-custom {
+    background: rgba(24, 24, 16, 0.2);
+    border-radius: 2em;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+/*
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+*/
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+.TEST {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 0;
+}
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 0;
+    position: relative;
+}
+
+.txt {
+    margin-top: auto; /* Pushes the .txt element to the bottom of the .chat-container */
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.custom-btn {
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    font-size: 20px; /* Ajustez la taille de la police si nécessaire */
+}
